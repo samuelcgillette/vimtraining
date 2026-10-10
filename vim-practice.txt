@@ -1,0 +1,559 @@
+================================================================================
+              THE CODEX OF CORRECTION  -  A Vim Practice File
+================================================================================
+
+  ++ BY ORDER OF THE ADEPTUS ADMINISTRATUM ++
+
+  Greetings, Scribe-Initiate.
+
+  Congratulations. You have been inducted into the Adeptus Administratum,
+  the glorious bureaucracy that keeps the Imperium of Man running, one form
+  at a time. Your predecessor at this desk served faithfully for three
+  hundred years before being found face-down on his cogitator. His final
+  report contained four thousand typos. You will fix them.
+
+  The sacred records have been corrupted by clerical errors, careless
+  servitors, and outright text heresy. Misspelled quotes. Extra words.
+  Entire lines of blasphemy slipped into the archives. Your duty is to
+  restore every record to its correct state, purge the text heresy, and
+  bring glory to the Emperor.
+
+  You have been issued the holy instrument of correction: Vim.
+  The mouse is a xenos device. Do not touch it.
+
+  Do not ask questions. Questions lead to heresy, and heresy leads to
+  paperwork.
+
+  ++ THOUGHT FOR THE DAY: A TIDY FILE IS A LOYAL FILE ++
+
+
+================================================================================
+HOW TO USE THIS FILE
+================================================================================
+
+  - Move with h j k l. Enter Insert mode with i or a. Return to Normal
+    mode with Esc. All commands in this file are typed in Normal mode.
+
+  - Each lesson explains a command, then gives you 5 practice exercises.
+
+  - Practice lines start with --->. Edit them until they match the
+    "goal" line underneath. Leave the goal lines alone.
+
+  - Made a mistake? Press u to undo it (Lesson 2 covers this).
+
+  - Want to start over? Quit without saving with :q! and open the file
+    again. If you already saved, run this in your terminal to reset it:
+        git checkout vim-practice.txt
+
+  - Save your progress at any time with :w
+
+  - The whole file takes about 15 minutes. Scroll down with j to begin.
+
+
+================================================================================
+LESSON 1:  x  -  DELETE ONE CHARACTER
+================================================================================
+
+  x deletes the character under the cursor.
+
+    1. Move the cursor onto the extra character.
+    2. Press x.
+
+  You can add a count: 3x deletes three characters in a row.
+
+  1) ---> The Emperorr protects.
+     goal The Emperor protects.
+
+  2) ---> Only in deathh does duty end.
+     goal Only in death does duty end.
+
+  3) ---> Knowwledge is power, guard it welll.
+     goal Knowledge is power, guard it well.
+
+  4) ---> Blesssed is the mind too small for doubbt.
+     goal Blessed is the mind too small for doubt.
+
+  5) ---> Innnnocence proves nothing.          (try 2x)
+     goal Innocence proves nothing.
+
+
+================================================================================
+LESSON 2:  u  and  Ctrl-r  -  UNDO AND REDO
+================================================================================
+
+  u       undoes your last change. Press it again to undo the one before.
+  Ctrl-r  redoes a change you just undid.
+
+  You can undo as far back as you like, so don't be afraid to experiment.
+
+  1) This line is already correct. Delete the "E" with x, then press u
+     to bring it back.
+     ---> The Emperor protects.
+     goal The Emperor protects.
+
+  2) Fix the line with x. Press u to undo your fix. Press Ctrl-r to
+     redo it.
+     ---> Heresyy grows from idleness.
+     goal Heresy grows from idleness.
+
+  3) This line is correct. Delete the word "denies" by pressing x six
+     times. Then press u six times until the line is restored.
+     ---> Fear denies faith.
+     goal Fear denies faith.
+
+  4) Delete the two extra exclamation marks with x. Press u twice to
+     bring them back. Press Ctrl-r twice to delete them again.
+     ---> A suspicious mind is a healthy mind.!!
+     goal A suspicious mind is a healthy mind.
+
+  5) Delete "no " (three characters) with 3x. Undo it with u. Redo it
+     with Ctrl-r. Then undo it one last time with u.
+     ---> Victory needs no explanation, defeat allows none.
+     goal Victory needs no explanation, defeat allows none.
+
+
+================================================================================
+LESSON 3:  dd  -  DELETE A WHOLE LINE
+================================================================================
+
+  dd deletes the entire line the cursor is on.
+
+  Add a count to delete several lines at once:
+    2dd  deletes this line and the one below it.
+    3dd  deletes three lines, and so on.
+
+  Delete the lines that do not belong in each record.
+
+  1) Delete the middle line.
+     ---> In the grim darkness of the far future,
+     ---> the Emperor is just a guy sitting on a chair.
+     ---> there is only war.
+
+  2) Delete the middle line.
+     ---> Even in death
+     ---> I would honestly rather retire.
+     ---> I still serve.
+
+  3) Delete the two middle lines with 2dd.
+     ---> Burn the heretic.
+     ---> Hug the heretic.
+     ---> Give the heretic a cookie.
+     ---> Kill the mutant.
+
+  4) Delete the three middle lines with 3dd.
+     ---> The Emperor protects.
+     ---> Blood for the Blood God!
+     ---> Skulls for the Skull Throne!
+     ---> Milk for the Khorne Flakes!
+     ---> Only in death does duty end.
+
+  5) Delete the last four lines with 4dd.
+     ---> Hope is the first step on the road to disappointment.
+     ---> ZOG DA HUMIES
+     ---> ORKS IZ DA BEST
+     ---> RED WUNZ GO FASTA
+     ---> WAAAGH!
+
+
+================================================================================
+LESSON 4:  d + a motion  -  DELETE WORDS AND PARTS OF LINES
+================================================================================
+
+  d is the "delete" operator. Follow it with a motion and it deletes
+  everything the motion would move over.
+
+    dw   delete to the start of the next word
+    de   delete to the end of the current word
+    db   delete back to the start of the word
+    d$   delete from the cursor to the end of the line
+
+  Add a count to repeat the motion: d2w deletes two words.
+
+  1) Put the cursor on the "t" in "truly" and press dw.
+     ---> The Emperor truly protects.
+     goal The Emperor protects.
+
+  2) Put the cursor on the space after "end." and press d$.
+     ---> Only in death does duty end. Also on weekends.
+     goal Only in death does duty end.
+
+  3) Put the cursor on the first "very" and press d2w.
+     ---> Knowledge is very very power, guard it well.
+     goal Knowledge is power, guard it well.
+
+  4) Put the cursor on the "i" in "smallish" and press de.
+     ---> Blessed is the mind too smallish for doubt.
+     goal Blessed is the mind too small for doubt.
+
+  5) Put the cursor on the "n" in "nothing" and press db.
+     ---> Innocence proves absolutely nothing.
+     goal Innocence proves nothing.
+
+
+================================================================================
+LESSON 5:  A  -  APPEND AT THE END OF THE LINE
+================================================================================
+
+  A jumps to the end of the line and puts you in Insert mode, no matter
+  where the cursor is on the line. Type your text, then press Esc.
+
+  Finish each line. Your cursor can start anywhere on the line.
+
+  1) ---> The Emperor
+     goal The Emperor protects.
+
+  2) ---> Only in death does
+     goal Only in death does duty end.
+
+  3) ---> Knowledge is power,
+     goal Knowledge is power, guard it well.
+
+  4) ---> There is only
+     goal There is only war.
+
+  5) ---> An open mind is like a fortress
+     goal An open mind is like a fortress with its gates unbarred and unguarded.
+
+
+================================================================================
+LESSON 6:  o  and  O  -  OPEN A NEW LINE
+================================================================================
+
+  o  opens a new line BELOW the cursor and puts you in Insert mode.
+  O  opens a new line ABOVE the cursor and puts you in Insert mode.
+
+  Type the missing line, then press Esc. You don't need to type the --->.
+
+  1) Use o on the first line to add "there is only war." below it.
+     ---> In the grim darkness of the far future,
+
+  2) Use o on the first line to add "Kill the mutant." below it.
+     ---> Burn the heretic.
+     ---> Purge the unclean.
+
+  3) Use O on the first line to add "Burn the heretic." above it.
+     ---> Kill the mutant.
+     ---> Purge the unclean.
+
+  4) Use O to add "For the Emperor!" above this line.
+     ---> Courage and honour!
+
+  5) Use O to add "Thought for the day:" above this line.
+     ---> Hope is the first step on the road to disappointment.
+
+
+================================================================================
+LESSON 7:  r  -  REPLACE ONE CHARACTER
+================================================================================
+
+  r followed by a character replaces the character under the cursor.
+  You stay in Normal mode, so there is no need to press Esc.
+
+  Example: put the cursor on a wrong letter and type re to make it an "e".
+
+  1) ---> The Empiror protects.
+     goal The Emperor protects.
+
+  2) ---> Only in deqth does duty end.
+     goal Only in death does duty end.
+
+  3) ---> Fear dexies faith.
+     goal Fear denies faith.
+
+  4) ---> Suffer not the witch to lime.
+     goal Suffer not the witch to live.
+
+  5) ---> Kill the mutent. Purge the unclaan.
+     goal Kill the mutant. Purge the unclean.
+
+
+================================================================================
+LESSON 8:  y  and  p  -  COPY (YANK) AND PASTE
+================================================================================
+
+  y is the "yank" (copy) operator. It works with motions just like d.
+
+    yy   yank the whole line
+    yw   yank to the start of the next word
+    p    paste after the cursor (or below, for whole lines)
+    P    paste before the cursor (or above, for whole lines)
+
+  Counts work too: 2yy yanks two lines, 3p pastes three times.
+  Bonus: dd also yanks the line it deletes, so dd then p moves a line.
+
+  1) Use yy then p to make a second copy of this line.
+     ---> I am Alpharius.
+     goal two lines that both say "I am Alpharius."
+
+  2) Use yy then 2p so this line appears three times in total.
+     ---> For the Emperor!
+     goal three lines that all say "For the Emperor!"
+
+  3) Put the cursor on the first "E" and press yw. Then move to the "p"
+     in the second "protects" and press P.
+     ---> The Emperor protects. The protects.
+     goal The Emperor protects. The Emperor protects.
+
+  4) Put the cursor on the first line and press 2yy. Move down to the
+     second line and press p.
+     ---> Courage and honour!
+     ---> For the Emperor!
+     goal the two lines, then the same two lines again.
+
+  5) These lines are in the wrong order. Use dd on the first line, then
+     press p to put it below the other one.
+     ---> there is only war.
+     ---> In the grim darkness of the far future,
+     goal "In the grim darkness..." first, "there is only war." second.
+
+
+================================================================================
+LESSON 9:  .  -  REPEAT THE LAST CHANGE
+================================================================================
+
+  . (the period key) repeats your last change. Make an edit once, then
+  move somewhere else and press . to do it again.
+
+  1) Press x on the first "!", then press . until they are all gone.
+     ---> The Emperor protects.!!!!!
+     goal The Emperor protects.
+
+  2) Delete the first "HERESY" line with dd. Move to the next "HERESY"
+     line and press . to delete it too. Repeat for the last one.
+     ---> Only in death does duty end.
+     ---> HERESY
+     ---> Even in death I still serve.
+     ---> HERESY
+     ---> Knowledge is power, guard it well.
+     ---> HERESY
+
+  3) On the first line, type A then ! then Esc. Press j, then . to add
+     "!" to the next line. Do the same for the third line.
+     ---> For the Emperor
+     ---> For the Throne
+     ---> For Terra
+     goal all three lines end with "!"
+
+  4) Put the cursor on the first "denies" and press dw. Then press .
+     once to delete the next one.
+     ---> Fear denies denies denies faith.
+     goal Fear denies faith.
+
+  5) Press o, type "Ave Imperator!", then press Esc. Press . twice more.
+     ---> Glory to the Imperium.
+     goal "Ave Imperator!" appears on three new lines below this one.
+
+
+================================================================================
+LESSON 10:  f  t  F  T  -  JUMP TO A CHARACTER ON THE LINE
+================================================================================
+
+  These commands jump to a specific character on the current line.
+
+    f<char>   jump forward ONTO the next <char>
+    t<char>   jump forward to just BEFORE the next <char>
+    F<char>   jump backward ONTO the previous <char>
+    T<char>   jump backward to just AFTER the previous <char>
+    ;         repeat the last f, t, F or T
+    ,         repeat it in the opposite direction
+
+  Example: fz jumps to the next "z". Use x or r to fix what you land on.
+
+  1) Start at the beginning of the line. Press fz, then x.
+     ---> Victory needs no explanation, defeat allows nonez.
+     goal Victory needs no explanation, defeat allows none.
+
+  2) Start at the beginning. Press fq, then x. Then press ; and x
+     to fix the next one. Repeat for the last one.
+     ---> Succqess is commemoqrated; failure merqely remembered.
+     goal Success is commemorated; failure merely remembered.
+
+  3) Start at the beginning. Press t. (t then period) to land just
+     before the period, then press x.
+     ---> There is no such thing as innocence, only degrees of guiltt.
+     goal There is no such thing as innocence, only degrees of guilt.
+
+  4) Press $ to go to the end. Press Fu to jump back to the "u", then
+     press ro to replace it.
+     ---> Hupe is the first step on the road to disappointment.
+     goal Hope is the first step on the road to disappointment.
+
+  5) Press $ to go to the end. Press Th to land just after the last "h".
+     Press ; to repeat it, landing just after the "h" in "deaths".
+     Then press x.
+     ---> The wise man learns from the deaths of others.
+     goal The wise man learns from the death of others.
+
+
+================================================================================
+LESSON 11:  d + f/t  -  DELETE UP TO A CHARACTER
+================================================================================
+
+  f and t are motions, so they work with d just like w and $ do.
+
+    dt<char>   delete up to, but not including, <char>
+    df<char>   delete up to and including <char>
+    dT<char>   delete backward to just after <char>
+    d2f<char>  delete through the second <char> (counts work too)
+
+  This is one of the fastest ways to delete part of a line.
+
+  1) Put the cursor on the space after "protects" and press dt.
+     ---> The Emperor protects (terms and conditions apply).
+     goal The Emperor protects.
+
+  2) Put the cursor at the start of the line and press df then Space.
+     ---> Erm, Knowledge is power, guard it well.
+     goal Knowledge is power, guard it well.
+
+  3) Put the cursor on the space after "mind" and press d2f)
+     ---> Blessed is the mind (citation needed) (source: trust me) too small for doubt.
+     goal Blessed is the mind too small for doubt.
+
+  4) Put the cursor on the period at the end and press dTg
+     ---> Innocence proves nothing whatsoever.
+     goal Innocence proves nothing.
+
+  5) Put the cursor on the space after "live" and press df)
+     ---> Suffer not the alien to live (unless it is really cute).
+     goal Suffer not the alien to live.
+
+
+================================================================================
+LESSON 12:  :s  -  FIND AND REPLACE
+================================================================================
+
+  :s/old/new/       replace the first "old" on the current line
+  :s/old/new/g      replace every "old" on the current line
+  :%s/old/new/g     replace every "old" in the whole file
+  :%s/old/new/gc    same, but ask before each one (y = yes, n = no)
+
+  Leave "new" empty to delete the text: :s/old//
+
+  Type the command and press Enter. Your cursor must be on the line for
+  the commands without %.
+
+  1) Put the cursor on the line and type :s/Emprah/Emperor/
+     ---> The Emprah protects.
+     goal The Emperor protects.
+
+  2) Put the cursor on the line and type :s/teh/the/g
+     ---> Kill teh mutant. Burn teh heretic. Purge teh unclean.
+     goal Kill the mutant. Burn the heretic. Purge the unclean.
+
+  3) Fix all three lines at once with :%s/Horsu/Horus/g
+     ---> Horsu was the Warmaster of the Imperium.
+     ---> Horsu turned against the Emperor.
+     ---> The Emperor defeated Horsu aboard the Vengeful Spirit.
+     goal all three lines say "Horus" instead
+
+  4) Only some of these need fixing. Type :%s/which/witch/gc
+     Vim stops at each match. Press y only when the match comes right
+     after "the" or "The". Press n for every other match.
+     ---> Suffer not the which to live.
+     ---> The which was found, which pleased the Inquisitor.
+     goal Suffer not the witch to live.
+     goal The witch was found, which pleased the Inquisitor.
+
+  5) Delete text by leaving the replacement empty: :s/, mostly//
+     ---> The Emperor protects, mostly.
+     goal The Emperor protects.
+
+
+================================================================================
+LESSON 13:  :!  -  RUN SHELL COMMANDS
+================================================================================
+
+  You can run terminal commands without leaving Vim.
+
+    :!command      run a command and show its output (press Enter after)
+    :r !command    insert the command's output below the cursor
+    :.!command     replace the current line with the command's output
+
+  These work in terminal Vim on Linux, macOS and Git Bash. The VS Code
+  Vim extension does not fully support them.
+
+  1) Type :!ls and press Enter. You'll see the files in this folder.
+     Press Enter again to come back.
+
+  2) Type :!echo For the Emperor and press Enter. Press Enter again to
+     come back.
+
+  3) Put the cursor on the line below and type :r !date
+     The current date appears on a new line underneath.
+     ---> Date of correction:
+
+  4) Put the cursor on the line below and type :r !whoami
+     Your username appears on a new line underneath.
+     ---> Corrected by:
+
+  5) Put the cursor on the line below and type :.!tr a-z A-Z
+     The line is run through the "tr" command and comes back uppercase.
+     ---> for the emperor
+     goal FOR THE EMPEROR
+
+
+================================================================================
+LESSON 14:  SPLIT VIEW
+================================================================================
+
+  You can view two files, or two parts of the same file, side by side.
+
+    :split     (or :sp)  split the window top and bottom
+    :vsplit    (or :vs)  split the window left and right
+    Ctrl-w w             jump to the other window
+    Ctrl-w h/j/k/l       jump to the window left/down/up/right
+    :q                   close the window you are in
+    :only                close every window except the one you are in
+
+  The ARCHIVE at the very bottom of this file has the correct copies of
+  some damaged records. Use split view to copy them up here.
+
+  1) Type :split. You now see this file twice. Press Ctrl-w w to jump
+     between the two windows. Close one with :q.
+
+  2) Type :split. In one window, press G to go to the bottom and find
+     Archive 1. Yank the quote with yy. Press Ctrl-w w to go back to the
+     other window, put the cursor on the damaged line, and press p.
+     Move back up to the damaged line and delete it with dd.
+     ---> [RECORD DAMAGED]
+
+  3) Do the same for Archive 2, but use :vsplit this time.
+     ---> [RECORD DAMAGED]
+
+  4) Do the same for Archive 3. Use Ctrl-w h/j/k/l to switch windows.
+     ---> [RECORD DAMAGED]
+
+  5) Archive 4 is two lines long. Use 2yy to yank both, paste them
+     below the damaged line, then delete the damaged line. When you are
+     done, type :only to close the extra window.
+     ---> [RECORD DAMAGED]
+
+
+================================================================================
+DONE
+================================================================================
+
+  You finished every lesson. Save your work with :wq
+
+  ++ THE EMPEROR IS PLEASED. YOUR RATION OF NUTRIENT PASTE HAS BEEN ++
+  ++ INCREASED BY 0.2%. REPORT TO YOUR DESK AT 0400 FOR YOUR NEXT   ++
+  ++ ASSIGNMENT: THE OTHER FOUR THOUSAND TYPOS.                      ++
+
+
+================================================================================
+ARCHIVE  (used in Lesson 14, do not edit)
+================================================================================
+
+  Archive 1:
+     ---> In the grim darkness of the far future, there is only war.
+
+  Archive 2:
+     ---> Even a man who has nothing can still offer his life.
+
+  Archive 3:
+     ---> An open mind is like a fortress with its gates unbarred and unguarded.
+
+  Archive 4:
+     ---> They shall be my finest warriors, these men who give of themselves to me.
+     ---> Like clay I shall mould them, and in the furnace of war forge them.
