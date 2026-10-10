@@ -47,7 +47,7 @@ HOW TO USE THIS FILE
 
   - Save your progress at any time with :w
 
-  - The whole file takes about 15 minutes. Scroll down with j to begin.
+  - Scroll down with j to begin.
 
 
 ================================================================================
@@ -86,15 +86,15 @@ LESSON 2:  u  and  Ctrl-r  -  UNDO AND REDO
 
   You can undo as far back as you like, so don't be afraid to experiment.
 
-  1) This line is already correct. Delete the "E" with x, then press u
+  1) This line is already correct. Delete the "H" with x, then press u
      to bring it back.
-     ---> The Emperor protects.
-     goal The Emperor protects.
+     ---> Heresy grows from idleness.
+     goal Heresy grows from idleness.
 
   2) Fix the line with x. Press u to undo your fix. Press Ctrl-r to
      redo it.
-     ---> Heresyy grows from idleness.
-     goal Heresy grows from idleness.
+     ---> Courage and honourr!
+     goal Courage and honour!
 
   3) This line is correct. Delete the word "denies" by pressing x six
      times. Then press u six times until the line is restored.
@@ -135,24 +135,24 @@ LESSON 3:  dd  -  DELETE A WHOLE LINE
      ---> I still serve.
 
   3) Delete the two middle lines with 2dd.
-     ---> Burn the heretic.
-     ---> Hug the heretic.
-     ---> Give the heretic a cookie.
-     ---> Kill the mutant.
+     ---> The Tyranids came from beyond the galaxy.
+     ---> They only wanted to make friends.
+     ---> And share some snacks.
+     ---> They devour every world in their path.
 
   4) Delete the three middle lines with 3dd.
-     ---> The Emperor protects.
-     ---> Blood for the Blood God!
-     ---> Skulls for the Skull Throne!
-     ---> Milk for the Khorne Flakes!
-     ---> Only in death does duty end.
+     ---> The Death Guard serve Grandfather Nurgle.
+     ---> Nurgle loves you!
+     ---> Free hugs from Grandfather Nurgle!
+     ---> Stop and smell the flowers of decay!
+     ---> Their primarch is Mortarion.
 
   5) Delete the last four lines with 4dd.
-     ---> Hope is the first step on the road to disappointment.
+     ---> Orks grow from spores.
      ---> ZOG DA HUMIES
      ---> ORKS IZ DA BEST
-     ---> RED WUNZ GO FASTA
-     ---> WAAAGH!
+     ---> WE NEED MOAR SHOOTAS
+     ---> GIT STOMPIN
 
 
 ================================================================================
@@ -170,24 +170,24 @@ LESSON 4:  d + a motion  -  DELETE WORDS AND PARTS OF LINES
   Add a count to repeat the motion: d2w deletes two words.
 
   1) Put the cursor on the "t" in "truly" and press dw.
-     ---> The Emperor truly protects.
-     goal The Emperor protects.
+     ---> Cadia truly stands!
+     goal Cadia stands!
 
-  2) Put the cursor on the space after "end." and press d$.
-     ---> Only in death does duty end. Also on weekends.
-     goal Only in death does duty end.
+  2) Put the cursor on the space after "Empire." and press d$.
+     ---> The Ethereals lead the Tau Empire. Mostly by pointing.
+     goal The Ethereals lead the Tau Empire.
 
   3) Put the cursor on the first "very" and press d2w.
-     ---> Knowledge is very very power, guard it well.
-     goal Knowledge is power, guard it well.
+     ---> Ignorance is very very a virtue.
+     goal Ignorance is a virtue.
 
   4) Put the cursor on the "i" in "smallish" and press de.
-     ---> Blessed is the mind too smallish for doubt.
-     goal Blessed is the mind too small for doubt.
+     ---> A smallish mind is a tidy mind.
+     goal A small mind is a tidy mind.
 
-  5) Put the cursor on the "n" in "nothing" and press db.
-     ---> Innocence proves absolutely nothing.
-     goal Innocence proves nothing.
+  5) Put the cursor on the "n" in "no" and press db.
+     ---> There is absolutely no such thing as innocence, only degrees of guilt.
+     goal There is no such thing as innocence, only degrees of guilt.
 
 
 ================================================================================
@@ -199,17 +199,17 @@ LESSON 5:  A  -  APPEND AT THE END OF THE LINE
 
   Finish each line. Your cursor can start anywhere on the line.
 
-  1) ---> The Emperor
-     goal The Emperor protects.
+  1) ---> Death to the
+     goal Death to the False Emperor!
 
-  2) ---> Only in death does
-     goal Only in death does duty end.
+  2) ---> For the Greater
+     goal For the Greater Good!
 
-  3) ---> Knowledge is power,
-     goal Knowledge is power, guard it well.
+  3) ---> Iron within,
+     goal Iron within, iron without.
 
-  4) ---> There is only
-     goal There is only war.
+  4) ---> Red wunz go
+     goal Red wunz go fasta.
 
   5) ---> An open mind is like a fortress
      goal An open mind is like a fortress with its gates unbarred and unguarded.
@@ -224,19 +224,17 @@ LESSON 6:  o  and  O  -  OPEN A NEW LINE
 
   Type the missing line, then press Esc. You don't need to type the --->.
 
-  1) Use o on the first line to add "there is only war." below it.
-     ---> In the grim darkness of the far future,
+  1) Use o to add "I am the right hand of my Emperor." below this line.
+     ---> I am the Hammer.
 
-  2) Use o on the first line to add "Kill the mutant." below it.
-     ---> Burn the heretic.
-     ---> Purge the unclean.
+  2) Use o to add "Mork is kunnin' but brutal." below this line.
+     ---> Gork is brutal but kunnin'.
 
-  3) Use O on the first line to add "Burn the heretic." above it.
-     ---> Kill the mutant.
-     ---> Purge the unclean.
+  3) Use O to add "Ave Dominus Nox!" above this line.
+     ---> We have come for you.
 
-  4) Use O to add "For the Emperor!" above this line.
-     ---> Courage and honour!
+  4) Use O to add "Into the fires of battle," above this line.
+     ---> unto the anvil of war!
 
   5) Use O to add "Thought for the day:" above this line.
      ---> Hope is the first step on the road to disappointment.
@@ -251,20 +249,20 @@ LESSON 7:  r  -  REPLACE ONE CHARACTER
 
   Example: put the cursor on a wrong letter and type re to make it an "e".
 
-  1) ---> The Empiror protects.
-     goal The Emperor protects.
+  1) ---> Thought begets hexesy; heresy begets retribution.
+     goal Thought begets heresy; heresy begets retribution.
 
-  2) ---> Only in deqth does duty end.
-     goal Only in death does duty end.
+  2) ---> Death is the servant of the righteaus.
+     goal Death is the servant of the righteous.
 
-  3) ---> Fear dexies faith.
-     goal Fear denies faith.
+  3) ---> The flesh is wezk!
+     goal The flesh is weak!
 
   4) ---> Suffer not the witch to lime.
      goal Suffer not the witch to live.
 
-  5) ---> Kill the mutent. Purge the unclaan.
-     goal Kill the mutant. Purge the unclean.
+  5) ---> No pity! No remerse! No feor!
+     goal No pity! No remorse! No fear!
 
 
 ================================================================================
@@ -278,74 +276,143 @@ LESSON 8:  y  and  p  -  COPY (YANK) AND PASTE
     p    paste after the cursor (or below, for whole lines)
     P    paste before the cursor (or above, for whole lines)
 
-  Counts work too: 2yy yanks two lines, 3p pastes three times.
+  Counts work too: y3w yanks three words, 2yy yanks two lines, and
+  2p pastes twice.
   Bonus: dd also yanks the line it deletes, so dd then p moves a line.
 
-  1) Use yy then p to make a second copy of this line.
-     ---> I am Alpharius.
-     goal two lines that both say "I am Alpharius."
+  1) Use yy then 2p so this chant appears three times in total.
+     ---> 'Ere we go!
+     goal three lines that all say "'Ere we go!"
 
-  2) Use yy then 2p so this line appears three times in total.
-     ---> For the Emperor!
-     goal three lines that all say "For the Emperor!"
+  2) Put the cursor on the first "B" and press yw. Then move to the "G"
+     in "God" and press P.
+     ---> Blood for the God! Skulls for the Skull Throne!
+     goal Blood for the Blood God! Skulls for the Skull Throne!
 
-  3) Put the cursor on the first "E" and press yw. Then move to the "p"
-     in the second "protects" and press P.
-     ---> The Emperor protects. The protects.
-     goal The Emperor protects. The Emperor protects.
+  3) Put the cursor on the first "I" and press y3w to yank "In life, ".
+     Then move to the "s" in "shame" and press P.
+     ---> In life, war. In death, peace. shame. In death, atonement.
+     goal In life, war. In death, peace. In life, shame. In death, atonement.
 
   4) Put the cursor on the first line and press 2yy. Move down to the
-     second line and press p.
-     ---> Courage and honour!
-     ---> For the Emperor!
+     second line and press p to repeat the chant.
+     ---> WAAAGH!
+     ---> Dakka dakka dakka!
      goal the two lines, then the same two lines again.
 
   5) These lines are in the wrong order. Use dd on the first line, then
      press p to put it below the other one.
-     ---> there is only war.
-     ---> In the grim darkness of the far future,
-     goal "In the grim darkness..." first, "there is only war." second.
+     ---> There is no strength in flesh, only weakness.
+     ---> There is no truth in flesh, only betrayal.
+     goal the "truth" line first, the "strength" line second.
 
 
 ================================================================================
-LESSON 9:  .  -  REPEAT THE LAST CHANGE
+LESSON 9:  v  and  V  -  VISUAL MODE (SELECT TEXT)
 ================================================================================
 
-  . (the period key) repeats your last change. Make an edit once, then
-  move somewhere else and press . to do it again.
+  Visual mode lets you select text first, then act on it.
 
-  1) Press x on the first "!", then press . until they are all gone.
-     ---> The Emperor protects.!!!!!
-     goal The Emperor protects.
+    v    start selecting characters. Move the cursor to grow the selection.
+    V    start selecting whole lines. Use j and k to add lines.
+    Esc  cancel the selection.
 
-  2) Delete the first "HERESY" line with dd. Move to the next "HERESY"
-     line and press . to delete it too. Repeat for the last one.
-     ---> Only in death does duty end.
-     ---> HERESY
-     ---> Even in death I still serve.
-     ---> HERESY
-     ---> Knowledge is power, guard it well.
-     ---> HERESY
+  Once text is selected, press:
+    d         delete it
+    y         yank (copy) it
+    U         make it UPPERCASE
+    u         make it lowercase
+    r<char>   replace every selected character with <char>
 
-  3) On the first line, type A then ! then Esc. Press j, then . to add
-     "!" to the next line. Do the same for the third line.
-     ---> For the Emperor
-     ---> For the Throne
-     ---> For Terra
+  1) Put the cursor on the comma after "comprehends all". Press v, then
+     press e until "taxes" is selected. Press d.
+     ---> The Omnissiah knows all, comprehends all, and also does taxes.
+     goal The Omnissiah knows all, comprehends all.
+
+  2) Put the cursor on the second line. Press V, then j to select the
+     third line too. Press d.
+     ---> The Necrons slept for sixty million years.
+     ---> They were having a really nice nap.
+     ---> Please do not wake them.
+     ---> Now they are awake, and they are not happy.
+
+  3) Put the cursor at the start of the line. Press v, then $, then U.
+     ---> we'z gonna stomp 'em!
+     goal WE'Z GONNA STOMP 'EM!
+
+  4) The Inquisition has ordered this name redacted. Put the cursor on
+     the "E" in "Erebus", press v, then e to select the name. Press rX.
+     ---> Erebus helped turn Horus against the Emperor.
+     goal XXXXXX helped turn Horus against the Emperor.
+
+  5) Put the cursor on the second line. Press V, then jj to select three
+     lines. Press d.
+     ---> The Aeldari wear spirit stones to protect their souls.
+     ---> Slaanesh is so fabulous.
+     ---> Slaanesh has excellent taste.
+     ---> Join Slaanesh today!
+     ---> Without them, She Who Thirsts would devour their souls.
+
+
+================================================================================
+LESSON 10:  Ctrl-v  -  EDIT MANY LINES AT ONCE
+================================================================================
+
+  Ctrl-v starts Visual Block mode. It selects a rectangle of text, so
+  you can edit the same column on several lines at once.
+
+    Ctrl-v     start a block selection. Use j/k and h/l to size it.
+    I          insert text before the block on every line
+    A          append text after the block on every line
+    $          stretch the block to the end of every line
+    d          delete the block
+    r<char>    replace every character in the block with <char>
+
+  Important: after I or A, type your text and press Esc. The text shows
+  up on the first line only until you press Esc, then it appears on
+  every line.
+
+  Windows terminals may paste on Ctrl-v. If that happens, use Ctrl-q.
+
+  1) Put the cursor on the "K" in "Khorne". Press Ctrl-v, then jjj to
+     cover all four lines. Press I, type "- " (dash and space), press Esc.
+     ---> Khorne
+     ---> Nurgle
+     ---> Tzeentch
+     ---> Slaanesh
+     goal each name starts with "- "
+
+  2) Mark every task as done. Put the cursor on the space inside the
+     first [ ]. Press Ctrl-v, then jj. Press rx.
+     ---> [ ] Burn the heretic.
+     ---> [ ] Kill the mutant.
+     ---> [ ] Purge the unclean.
+     goal each line starts with [x]
+
+  3) Put the cursor on the first line. Press Ctrl-v, then jj, then $.
+     Press A, type "!", press Esc.
+     ---> For the Lion
+     ---> For Russ and the Allfather
+     ---> For Vulkan
      goal all three lines end with "!"
 
-  4) Put the cursor on the first "denies" and press dw. Then press .
-     once to delete the next one.
-     ---> Fear denies denies denies faith.
-     goal Fear denies faith.
+  4) Comment out this code. Put the cursor on the first "p", press
+     Ctrl-v, then jj. Press I, type "// ", press Esc.
+     ---> purge(heretics);
+     ---> purge(mutants);
+     ---> purge(xenos);
+     goal each line starts with "// "
 
-  5) Press o, type "Ave Imperator!", then press Esc. Press . twice more.
-     ---> Glory to the Imperium.
-     goal "Ave Imperator!" appears on three new lines below this one.
+  5) Uncomment this code. Put the cursor on the first "/", press Ctrl-v,
+     then jj to go down and ll to select three columns. Press d.
+     ---> // pray(emperor);
+     ---> // bless(bolter);
+     ---> // appease(machine_spirit);
+     goal the "// " is gone from all three lines
 
 
 ================================================================================
-LESSON 10:  f  t  F  T  -  JUMP TO A CHARACTER ON THE LINE
+LESSON 11:  f  t  F  T  -  JUMP TO A CHARACTER ON THE LINE
 ================================================================================
 
   These commands jump to a specific character on the current line.
@@ -360,8 +427,8 @@ LESSON 10:  f  t  F  T  -  JUMP TO A CHARACTER ON THE LINE
   Example: fz jumps to the next "z". Use x or r to fix what you land on.
 
   1) Start at the beginning of the line. Press fz, then x.
-     ---> Victory needs no explanation, defeat allows nonez.
-     goal Victory needs no explanation, defeat allows none.
+     ---> Everything is going just as planzned.
+     goal Everything is going just as planned.
 
   2) Start at the beginning. Press fq, then x. Then press ; and x
      to fix the next one. Repeat for the last one.
@@ -370,13 +437,13 @@ LESSON 10:  f  t  F  T  -  JUMP TO A CHARACTER ON THE LINE
 
   3) Start at the beginning. Press t. (t then period) to land just
      before the period, then press x.
-     ---> There is no such thing as innocence, only degrees of guiltt.
-     goal There is no such thing as innocence, only degrees of guilt.
+     ---> The difference between heresy and treachery is ignorancee.
+     goal The difference between heresy and treachery is ignorance.
 
   4) Press $ to go to the end. Press Fu to jump back to the "u", then
      press ro to replace it.
-     ---> Hupe is the first step on the road to disappointment.
-     goal Hope is the first step on the road to disappointment.
+     ---> To admit defeat is to blaspheme against the Emperur.
+     goal To admit defeat is to blaspheme against the Emperor.
 
   5) Press $ to go to the end. Press Th to land just after the last "h".
      Press ; to repeat it, landing just after the "h" in "deaths".
@@ -386,7 +453,7 @@ LESSON 10:  f  t  F  T  -  JUMP TO A CHARACTER ON THE LINE
 
 
 ================================================================================
-LESSON 11:  d + f/t  -  DELETE UP TO A CHARACTER
+LESSON 12:  d + f/t  -  DELETE UP TO A CHARACTER
 ================================================================================
 
   f and t are motions, so they work with d just like w and $ do.
@@ -398,21 +465,21 @@ LESSON 11:  d + f/t  -  DELETE UP TO A CHARACTER
 
   This is one of the fastest ways to delete part of a line.
 
-  1) Put the cursor on the space after "protects" and press dt.
-     ---> The Emperor protects (terms and conditions apply).
-     goal The Emperor protects.
+  1) Put the cursor on the space after "life" and press dt.
+     ---> Even a man who has nothing can still offer his life (terms apply).
+     goal Even a man who has nothing can still offer his life.
 
   2) Put the cursor at the start of the line and press df then Space.
-     ---> Erm, Knowledge is power, guard it well.
-     goal Knowledge is power, guard it well.
+     ---> Erm, Repent! For tomorrow you die!
+     goal Repent! For tomorrow you die!
 
-  3) Put the cursor on the space after "mind" and press d2f)
-     ---> Blessed is the mind (citation needed) (source: trust me) too small for doubt.
-     goal Blessed is the mind too small for doubt.
+  3) Put the cursor on the space after "insane" and press d2f)
+     ---> Only the insane (citation needed) (source: trust me) have strength enough to prosper.
+     goal Only the insane have strength enough to prosper.
 
-  4) Put the cursor on the period at the end and press dTg
-     ---> Innocence proves nothing whatsoever.
-     goal Innocence proves nothing.
+  4) Put the cursor on the period at the end and press dTh
+     ---> The Aeldari call humans mon-keigh, apparently.
+     goal The Aeldari call humans mon-keigh.
 
   5) Put the cursor on the space after "live" and press df)
      ---> Suffer not the alien to live (unless it is really cute).
@@ -420,7 +487,7 @@ LESSON 11:  d + f/t  -  DELETE UP TO A CHARACTER
 
 
 ================================================================================
-LESSON 12:  :s  -  FIND AND REPLACE
+LESSON 13:  :s  -  FIND AND REPLACE
 ================================================================================
 
   :s/old/new/       replace the first "old" on the current line
@@ -433,13 +500,13 @@ LESSON 12:  :s  -  FIND AND REPLACE
   Type the command and press Enter. Your cursor must be on the line for
   the commands without %.
 
-  1) Put the cursor on the line and type :s/Emprah/Emperor/
-     ---> The Emprah protects.
-     goal The Emperor protects.
+  1) Put the cursor on the line and type :s/Sangwinius/Sanguinius/
+     ---> By the blood of Sangwinius!
+     goal By the blood of Sanguinius!
 
   2) Put the cursor on the line and type :s/teh/the/g
-     ---> Kill teh mutant. Burn teh heretic. Purge teh unclean.
-     goal Kill the mutant. Burn the heretic. Purge the unclean.
+     ---> From teh moment I understood teh weakness of my flesh, it disgusted me.
+     goal From the moment I understood the weakness of my flesh, it disgusted me.
 
   3) Fix all three lines at once with :%s/Horsu/Horus/g
      ---> Horsu was the Warmaster of the Imperium.
@@ -448,20 +515,20 @@ LESSON 12:  :s  -  FIND AND REPLACE
      goal all three lines say "Horus" instead
 
   4) Only some of these need fixing. Type :%s/which/witch/gc
-     Vim stops at each match. Press y only when the match comes right
-     after "the" or "The". Press n for every other match.
-     ---> Suffer not the which to live.
-     ---> The which was found, which pleased the Inquisitor.
-     goal Suffer not the witch to live.
-     goal The witch was found, which pleased the Inquisitor.
+     Vim highlights each match and asks about it. Press y when the
+     highlighted word should be "witch". Press n for every other match.
+     ---> The Sisters of Battle burn every which they find.
+     ---> The which never sees it coming, which is the point.
+     goal The Sisters of Battle burn every witch they find.
+     goal The witch never sees it coming, which is the point.
 
   5) Delete text by leaving the replacement empty: :s/, mostly//
-     ---> The Emperor protects, mostly.
-     goal The Emperor protects.
+     ---> They shall know no fear, mostly.
+     goal They shall know no fear.
 
 
 ================================================================================
-LESSON 13:  :!  -  RUN SHELL COMMANDS
+LESSON 14:  :!  -  RUN SHELL COMMANDS
 ================================================================================
 
   You can run terminal commands without leaving Vim.
@@ -476,7 +543,7 @@ LESSON 13:  :!  -  RUN SHELL COMMANDS
   1) Type :!ls and press Enter. You'll see the files in this folder.
      Press Enter again to come back.
 
-  2) Type :!echo For the Emperor and press Enter. Press Enter again to
+  2) Type :!echo Ave Imperator and press Enter. Press Enter again to
      come back.
 
   3) Put the cursor on the line below and type :r !date
@@ -494,7 +561,7 @@ LESSON 13:  :!  -  RUN SHELL COMMANDS
 
 
 ================================================================================
-LESSON 14:  SPLIT VIEW
+LESSON 15:  SPLIT VIEW
 ================================================================================
 
   You can view two files, or two parts of the same file, side by side.
@@ -542,17 +609,17 @@ DONE
 
 
 ================================================================================
-ARCHIVE  (used in Lesson 14, do not edit)
+ARCHIVE  (used in Lesson 15, do not edit)
 ================================================================================
 
   Archive 1:
-     ---> In the grim darkness of the far future, there is only war.
+     ---> The blood of martyrs is the seed of the Imperium.
 
   Archive 2:
-     ---> Even a man who has nothing can still offer his life.
+     ---> Do not ask why you serve. Only ask how.
 
   Archive 3:
-     ---> An open mind is like a fortress with its gates unbarred and unguarded.
+     ---> We march for Macragge!
 
   Archive 4:
      ---> They shall be my finest warriors, these men who give of themselves to me.
