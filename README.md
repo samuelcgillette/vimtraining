@@ -19,3 +19,7 @@ If you saved changes and want a fresh copy:
 ```bash
 git checkout vim-practice.txt
 ```
+
+## Challenges
+
+Finished the practice file? Try the three 5-minute challenges in [`challenges/`](challenges/README.md). Each one comes with a key.

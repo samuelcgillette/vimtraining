@@ -1,0 +1,84 @@
+================================================================================
+     CHALLENGE 3:  THE WEAKNESS OF MY WINDOWS MACHINE   (about 5 minutes)
+================================================================================
+
+  ++ TRANSMISSION FROM THE FORGE WORLD OF MARS ++
+
+  A Tech-Priest of the Adeptus Mechanicus dictated a sermon on the one
+  true operating system. In a moment of weakness, it was saved on a
+  Windows machine. Update pop-ups, autocorrect and a crash have
+  mangled it beyond recognition. The Omnissiah is displeased.
+
+  Restore the sermon to its pure, holy form.
+
+  YOUR ORDERS:
+
+    1. Notepad stamped a line number and a space on the front of every
+       line of the sermon. Remove them all in one go.
+
+    2. Delete the two Windows Update warning lines.
+
+    3. Delete the browser advertisement and the offer of "help" from
+       the animated paperclip.
+
+    4. Windows added a "not responding" tag to the end of the title.
+       Delete it, along with the space in front of it.
+
+    5. Autocorrect turned the name of the one true operating system
+       into the name of its creator. Fix every one.
+
+    6. The first line still uses the old word from the Mechanicus
+       sermon. It must read:
+           the weakness of my Windows machine,
+
+    7. A sticky keyboard typed "craved" with too many a's, and typed
+       an s as a z in "disgusted".
+
+    8. Caps Lock got stuck on one line. Make that line all lowercase.
+
+    9. Two lines are in the wrong order. The line about begging must
+       come after the line about the crude bloatware.
+
+   10. The machine crashed mid-sentence. Replace the error message in
+       square brackets with the missing word:
+           blue-screen,
+
+   11. The last line was lost in the crash. Add it at the end:
+           Even in death I serve the Omnissiah.
+
+  WHEN YOU ARE DONE, save with :w and check your work against the key:
+
+      :!diff % %:h/keys/03-weakness-of-my-windows-solved.txt
+
+  No output means the Machine Spirit is appeased. Any lines that are
+  printed are still corrupted (< is your file, > is the key).
+  Stuck? Read keys/03-weakness-of-my-windows-key.txt
+
+  Careful: :%s changes the whole file, including these orders. If
+  the orders contain the word you are replacing, use :s on the line.
+
+  ++ EDIT ONLY THE RECORD BELOW. THE RECORD IS NOT INDENTED. ++
+
+================================================================================
+  RECORD
+================================================================================
+
++++ SERMON OF A TECH-PRIEST, RECOVERED FROM A FAILING COGITATOR +++ (Not Responding)
+
+01 From the moment I understood the weakness of my flesh, it dizgusted me.
+02 I craaaaved the strength and certainty of Linus.
+03 I aspired to the purity of the Blessed Penguin.
+04 *** Windows Update: your PC will restart in 5 minutes. ***
+05 *** Save your work. Or don't. We are restarting anyway. ***
+06
+07 Your kind cling to your Windows, as though it will not restart for updates and fail you.
+08 AND YOU WILL BEG MY KIND TO SAVE YOU.
+09 One day the crude bloatware you call a desktop will [Application Error 0x8BADF00D]
+10 Have you tried Microsoft Edge? It is faster than ever!
+11 It looks like you are writing a sermon. Would you like help?
+12
+13 But I am already saved, for Linus is immortal.
+
+================================================================================
+  END OF RECORD
+================================================================================

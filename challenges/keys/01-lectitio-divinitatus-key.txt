@@ -1,0 +1,114 @@
+================================================================================
+  KEY:  CHALLENGE 1  -  THE DEFILED SCRIPTURE
+================================================================================
+
+  This is one way to complete each order. There are others, and any
+  of them is fine if the diff check comes back clean. The orders can be
+  done in any sequence.
+
+  The fully restored file is keys/01-lectitio-divinitatus-solved.txt
+
+
+  ORDER 1  -  Delete the cultists' lines                    (Lesson 3)
+  --------------------------------------------------------------------
+    Move to "Blood for the Blood God!" and press dd.
+    Move to "The Golden Throne is empty..." and press 2dd to delete it
+    and "Give yourself to the warp." together.
+    (V then j then d does the same thing.)
+
+  ORDER 2  -  Restore the Emperor's name                    (Lesson 13)
+  --------------------------------------------------------------------
+    :%s/Warmaster/Emperor/g
+    This fixes all five at once: one on PAGE SEVEN, one on PAGE EIGHT
+    and three in the litany.
+
+  ORDER 3  -  Scrub the eight-pointed stars           (Lessons 7, 11)
+  --------------------------------------------------------------------
+    On the "Wh8re His light falls..." line, press 0 then f8 to land
+    on the first 8 and press re. Then press ; to jump to the next 8
+    and press re again.
+
+  ORDER 4  -  Delete the mocking aside                     (Lesson 12)
+  --------------------------------------------------------------------
+    On the "...so that we may live (for now, heh heh)." line, put the
+    cursor on the space before "(" and press dt. to delete up to the
+    period.
+
+  ORDER 5  -  Restore the bullet points                    (Lesson 10)
+  --------------------------------------------------------------------
+    Put the cursor on the "P" of "Pray at dawn". Press Ctrl-v, then
+    jjj to cover all four duties. Press I, type "- " (dash and space),
+    and press Esc.
+
+  ORDER 6  -  Restore the fourth duty                   (Lessons 5, 12)
+  --------------------------------------------------------------------
+    On the "Never read a forbidden book..." line, press f, to jump to
+    the comma, then d$ to delete to the end of the line.
+    Press A, type ", so that your soul stays pure." and press Esc.
+
+  ORDER 7  -  Redact the daemon's name                      (Lesson 9)
+  --------------------------------------------------------------------
+    Put the cursor on the "K" in "Ka'Bandha". Press v, then t and
+    Space to select everything up to (not including) the space after
+    the name. Press rX.
+    Result: XXXXXXXXX (nine X's, one for the apostrophe too).
+
+  ORDER 8  -  Write the missing heading                     (Lesson 6)
+  --------------------------------------------------------------------
+    There are two blank lines between the last duty and the litany.
+    Put the cursor on the first one and press o. Type
+    "PAGE NINE: THE LITANY OF WARDING" and press Esc.
+    (Or put the cursor on the second blank line and use O instead.)
+
+  ORDER 9  -  Strip the heretical chant                    (Lesson 10)
+  --------------------------------------------------------------------
+    Put the cursor on the "A" of the first "Ave Chaos!". Press Ctrl-v,
+    then jj to cover all three lines. Press f then Space, then ; to
+    stretch the block over "Ave Chaos! " (including the space).
+    Press d.
+
+  ORDER 10  -  Bring back the hidden verse          (Lessons 8, 15)
+  --------------------------------------------------------------------
+    Type :split. In one window press G to jump to the bottom of the
+    file and put the cursor on "From the whispers of the warp...".
+    Press yy. Press Ctrl-w w to go back to the other window, put the
+    cursor on "From the curse of the mutant..." and press p.
+    Type :only to close the extra window.
+    Do not delete the hidden copy at the bottom. It stays.
+
+
+  CHECK YOUR WORK
+  --------------------------------------------------------------------
+    :w
+    :!diff % %:h/keys/01-lectitio-divinitatus-solved.txt
+
+
+================================================================================
+  THE RESTORED PAGES
+================================================================================
+
+THE LECTITIO DIVINITATUS
+Pages Seven through Nine
+
+PAGE SEVEN: OF THE LIGHT ETERNAL
+
+The Emperor is the light that holds back the dark.
+Where His light falls, the daemon cannot stand.
+He sits upon the Golden Throne so that we may live.
+Each day He suffers, and each day we give thanks.
+
+PAGE EIGHT: THE FOUR DUTIES OF THE FAITHFUL
+
+Keep these duties, and no daemon such as XXXXXXXXX may claim you.
+
+- Pray at dawn, so that the Emperor knows your voice.
+- Work until dusk, so that the Imperium may endure.
+- Report the heretic, so that the rot does not spread.
+- Never read a forbidden book, so that your soul stays pure.
+
+PAGE NINE: THE LITANY OF WARDING
+
+From the lies of the traitor, our Emperor, deliver us.
+From the touch of the daemon, our Emperor, deliver us.
+From the curse of the mutant, our Emperor, deliver us.
+From the whispers of the warp, our Emperor, deliver us.

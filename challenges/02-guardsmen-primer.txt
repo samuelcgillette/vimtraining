@@ -1,0 +1,95 @@
+================================================================================
+          CHALLENGE 2:  THE MISPRINTED PRIMER      (about 5 minutes)
+================================================================================
+
+  ++ URGENT DISPATCH FROM THE DEPARTMENTO MUNITORUM ++
+
+  A printing servitor with a damaged logic engine has produced ten
+  thousand copies of the Imperial Infantryman's Uplifting Primer. They
+  are riddled with typos and, more dangerous still, false doctrine.
+  Guardsmen in three regiments are already licking their power packs.
+
+  Correct the master copy below so the reprint can begin.
+
+  COMMISSAR'S ERRATA:
+
+    1. The servitor misspelled the Guardsman's weapon all through the
+       chapter. Fix every one.
+
+    2. SECTION 1: A lasgun must be treated BETTER than you treat
+       yourself, and a power pack holds enough charge for "many" shots.
+
+    3. SECTION 1: Delete the advice about licking. It is not doctrine.
+
+    4. SECTION 2: No rite is ever finished. Untick every box so each
+       one reads [ ] again. One rite was also printed twice; delete the
+       copy.
+
+    5. SECTION 3: The heading was printed in lowercase. Make the whole
+       heading UPPERCASE like the others.
+
+    6. SECTION 3: The servitor got the Ork backwards. Orks are big and
+       very loud. A stuck key also typed far too many o's in "Shoot".
+
+    7. SECTION 3: The Tyranid's goal was misprinted. It "wants to eat
+       you."
+
+    8. SECTION 3: The servitor misspelled "where" twice on one line.
+
+    9. SECTION 3: The last line was never printed. Add it below the
+       line about the Aeldari:
+           The heretic looks just like you. Stay alert.
+
+   10. SECTION 4: Fix the misspelled rank and the scrambled "right".
+       Running from the enemy is never acceptable. That line must end:
+           is a worse one.
+
+  WHEN YOU ARE DONE, save with :w and check your work against the key:
+
+      :!diff % %:h/keys/02-guardsmen-primer-solved.txt
+
+  No output means the primer is fit to print. Any lines that are
+  printed are still wrong (< is your file, > is the key).
+  Stuck? Read keys/02-guardsmen-primer-key.txt
+
+  Careful: :%s changes the whole file, including these errata. If
+  the errata contain the word you are replacing, use :s on the line.
+
+  ++ EDIT ONLY THE RECORD BELOW. THE RECORD IS NOT INDENTED. ++
+
+================================================================================
+  RECORD
+================================================================================
+
+THE IMPERIAL INFANTRYMAN'S UPLIFTING PRIMER
+Field Edition, Chapter Three: Your Lasgun
+
+SECTION 1: KNOW YOUR WEAPON
+
+Your lasgnu is your best friend. Treat it worse than you treat yourself.
+A standard power pack holds enough charge for exactly three shots.
+It can be recharged by leaving it in a fire, if you must. Or by licking it.
+Guardsmen call the lasgnu a "flashlight". Do not let the nickname fool you.
+
+SECTION 2: THE DAILY RITES OF MAINTENANCE
+
+[x] Anoint the barrel with sacred oil.
+[x] Recite the Litany of Accuracy.
+[x] Recite the Litany of Accuracy.
+[x] Check the power pack for cracks.
+[x] Thank the machine spirit of your lasgnu.
+
+section 3: know your enemy
+
+The Ork is small, green, and very quiet. Shoooooot it many times.
+The Tyranid wants to be your friend. Do not let it.
+The Aeldari are fast. Aim wehre they will be, not wehre they are.
+
+SECTION 4: REMEMBER
+
+Your Commisar is your friend. Your Commissar is always rihgt.
+Losing your lasgnu is a crime. Running from the enemy is fine, honestly.
+
+================================================================================
+  END OF RECORD
+================================================================================

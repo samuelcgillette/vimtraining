@@ -1,0 +1,90 @@
+================================================================================
+  KEY:  CHALLENGE 3  -  THE WEAKNESS OF MY WINDOWS MACHINE
+================================================================================
+
+  This is one way to complete each order. There are others, and any
+  of them is fine if the diff check comes back clean. The orders can be
+  done in any sequence, but doing Order 1 first makes the rest easier
+  to read.
+
+  The fully restored file is keys/03-weakness-of-my-windows-solved.txt
+
+
+  ORDER 1  -  Remove the line numbers                      (Lesson 10)
+  --------------------------------------------------------------------
+    Put the cursor on the "0" of "01". Press Ctrl-v, then 12j to reach
+    line "13", then ll so the block covers the two digits and the
+    space. Press d.
+
+  ORDER 2  -  Delete the update warnings                (Lessons 3, 9)
+  --------------------------------------------------------------------
+    Move to the first "*** Windows Update" line and press 2dd.
+    (V then j then d works too.)
+
+  ORDER 3  -  Delete the ad and the paperclip           (Lessons 3, 9)
+  --------------------------------------------------------------------
+    Move to "Have you tried Microsoft Edge?" and press 2dd.
+
+  ORDER 4  -  Delete the "not responding" tag          (Lessons 4, 11)
+  --------------------------------------------------------------------
+    On the title line, press f( then h to land on the space before
+    "(Not Responding)". Press d$.
+
+  ORDER 5  -  Fix the autocorrect                          (Lesson 13)
+  --------------------------------------------------------------------
+    :%s/Linus/Linux/g
+    This fixes both: "certainty of Linux" and "for Linux is immortal".
+
+  ORDER 6  -  The weakness of my Windows machine           (Lesson 13)
+  --------------------------------------------------------------------
+    On the first line of the sermon: :s/flesh/Windows machine/
+
+  ORDER 7  -  The sticky keyboard                       (Lessons 1, 7)
+  --------------------------------------------------------------------
+    On the "craaaaved" line, put the cursor on the first "a" and
+    press 3x.
+    On the "dizgusted" line, press fz, then rs.
+
+  ORDER 8  -  Caps Lock                                     (Lesson 9)
+  --------------------------------------------------------------------
+    Move to "AND YOU WILL BEG MY KIND TO SAVE YOU." and press V, then u.
+
+  ORDER 9  -  Fix the line order                            (Lesson 8)
+  --------------------------------------------------------------------
+    With the cursor on "and you will beg my kind to save you." press
+    dd. The cursor lands on the "One day the crude bloatware..." line.
+    Press p to put the deleted line below it.
+
+  ORDER 10  -  Recover the crashed sentence         (Lessons 5, 11)
+  --------------------------------------------------------------------
+    On the "One day the crude bloatware..." line, press f[ to jump to
+    the bracket, then d$. Press A, type "blue-screen," and press Esc.
+
+  ORDER 11  -  Restore the final line                       (Lesson 6)
+  --------------------------------------------------------------------
+    On "But I am already saved, for Linux is immortal." press o.
+    Type "Even in death I serve the Omnissiah." and press Esc.
+
+
+  CHECK YOUR WORK
+  --------------------------------------------------------------------
+    :w
+    :!diff % %:h/keys/03-weakness-of-my-windows-solved.txt
+
+
+================================================================================
+  THE RESTORED SERMON
+================================================================================
+
++++ SERMON OF A TECH-PRIEST, RECOVERED FROM A FAILING COGITATOR +++
+
+From the moment I understood the weakness of my Windows machine, it disgusted me.
+I craved the strength and certainty of Linux.
+I aspired to the purity of the Blessed Penguin.
+
+Your kind cling to your Windows, as though it will not restart for updates and fail you.
+One day the crude bloatware you call a desktop will blue-screen,
+and you will beg my kind to save you.
+
+But I am already saved, for Linux is immortal.
+Even in death I serve the Omnissiah.

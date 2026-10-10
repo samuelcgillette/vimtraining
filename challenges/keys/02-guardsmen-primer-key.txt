@@ -1,0 +1,114 @@
+================================================================================
+  KEY:  CHALLENGE 2  -  THE MISPRINTED PRIMER
+================================================================================
+
+  This is one way to complete each erratum. There are others, and any
+  of them is fine if the diff check comes back clean. The errata can
+  be done in any sequence.
+
+  The fully corrected file is keys/02-guardsmen-primer-solved.txt
+
+
+  ERRATUM 1  -  Spell the weapon right                     (Lesson 13)
+  --------------------------------------------------------------------
+    :%s/lasgnu/lasgun/g
+    This fixes all four, in SECTIONS 1, 2 and 4.
+
+  ERRATUM 2  -  Better treatment, many shots         (Lessons 4, 13)
+  --------------------------------------------------------------------
+    On the "Treat it worse..." line, type :s/worse/better/
+    On the power pack line, put the cursor on the "e" of "exactly" and
+    press d2w to delete "exactly three ". Press i, type "many " (with
+    the space) and press Esc.
+
+  ERRATUM 3  -  No licking                                  (Lesson 4)
+  --------------------------------------------------------------------
+    On the "...if you must. Or by licking it." line, put the cursor on
+    the space after "must." and press d$.
+
+  ERRATUM 4  -  Untick the boxes, remove the copy     (Lessons 3, 10)
+  --------------------------------------------------------------------
+    Put the cursor on the first "x" inside [x]. Press Ctrl-v, then
+    jjjj to cover all five boxes. Press r then Space.
+    Move to either "Recite the Litany of Accuracy." line and press dd.
+
+  ERRATUM 5  -  Uppercase the heading                       (Lesson 9)
+  --------------------------------------------------------------------
+    Move to "section 3: know your enemy", press V, then U.
+
+  ERRATUM 6  -  The Ork, corrected                    (Lessons 1, 13)
+  --------------------------------------------------------------------
+    On the Ork line:
+      :s/small/big/
+      :s/quiet/loud/
+    Then put the cursor on the first "o" in "Shoooooot" and press 4x.
+
+  ERRATUM 7  -  The Tyranid's real goal              (Lesson 12)
+  --------------------------------------------------------------------
+    On the Tyranid line, put the cursor on the "b" in "be your friend"
+    and press dt. to delete up to the period. Press i, type "eat you"
+    and press Esc.
+
+  ERRATUM 8  -  "where", twice                             (Lesson 13)
+  --------------------------------------------------------------------
+    On the Aeldari line: :s/wehre/where/g
+    The g at the end catches both on the same line.
+
+  ERRATUM 9  -  The missing line                            (Lesson 6)
+  --------------------------------------------------------------------
+    With the cursor on the Aeldari line, press o. Type
+    "The heretic looks just like you. Stay alert." and press Esc.
+
+  ERRATUM 10  -  SECTION 4                    (Lessons 5, 8, 11, 12)
+  --------------------------------------------------------------------
+    "Commisar": put the cursor on its "s" (fs gets you there from the
+    start of the line), press a, type s, press Esc.
+
+    "rihgt": put the cursor on the "h" and press x then p. x cuts the
+    "h" and p pastes it back one character later. "xp" is the classic
+    Vim trick for swapping two letters, just like dd then p swaps two
+    lines.
+
+    "fine, honestly.": from the start of the line press ff, then ; to
+    land on the "f" in "fine". Press d$, then A, type "a worse one."
+    and press Esc.
+
+
+  CHECK YOUR WORK
+  --------------------------------------------------------------------
+    :w
+    :!diff % %:h/keys/02-guardsmen-primer-solved.txt
+
+
+================================================================================
+  THE CORRECTED PRIMER
+================================================================================
+
+THE IMPERIAL INFANTRYMAN'S UPLIFTING PRIMER
+Field Edition, Chapter Three: Your Lasgun
+
+SECTION 1: KNOW YOUR WEAPON
+
+Your lasgun is your best friend. Treat it better than you treat yourself.
+A standard power pack holds enough charge for many shots.
+It can be recharged by leaving it in a fire, if you must.
+Guardsmen call the lasgun a "flashlight". Do not let the nickname fool you.
+
+SECTION 2: THE DAILY RITES OF MAINTENANCE
+
+[ ] Anoint the barrel with sacred oil.
+[ ] Recite the Litany of Accuracy.
+[ ] Check the power pack for cracks.
+[ ] Thank the machine spirit of your lasgun.
+
+SECTION 3: KNOW YOUR ENEMY
+
+The Ork is big, green, and very loud. Shoot it many times.
+The Tyranid wants to eat you. Do not let it.
+The Aeldari are fast. Aim where they will be, not where they are.
+The heretic looks just like you. Stay alert.
+
+SECTION 4: REMEMBER
+
+Your Commissar is your friend. Your Commissar is always right.
+Losing your lasgun is a crime. Running from the enemy is a worse one.

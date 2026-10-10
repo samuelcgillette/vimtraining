@@ -1,0 +1,91 @@
+================================================================================
+          CHALLENGE 1:  THE DEFILED SCRIPTURE      (about 5 minutes)
+================================================================================
+
+  ++ PRIORITY ORDER FROM THE ADEPTUS MINISTORUM ++
+
+  Scribe-Initiate, a cell of Chaos cultists broke into the shrine-library
+  of Hive Tertius and defiled three pages of the Lectitio Divinitatus.
+  The faithful cannot pray from a corrupted text. Restore it.
+
+  YOUR ORDERS:
+
+    1. The cultists scrawled their own blasphemies onto PAGE SEVEN.
+       Delete every line that does not praise the Emperor (3 lines).
+
+    2. Everywhere the Emperor is named, the cultists wrote the title of
+       the arch-traitor Horus instead. Restore the true name throughout.
+
+    3. Two letters on PAGE SEVEN were carved over with eight-pointed
+       stars (they look like the number eight). Each should be an "e".
+
+    4. A cultist added a mocking aside in parentheses on PAGE SEVEN.
+       Delete it, along with the space in front of it.
+
+    5. The bullet points ("- ") were scraped off the four duties on
+       PAGE EIGHT. Put them back.
+
+    6. The ending of the fourth duty was rewritten. Delete everything
+       from its comma onward and write the true ending:
+           , so that your soul stays pure.
+
+    7. A daemon's name was written on PAGE EIGHT. The Inquisition
+       demands it be redacted: replace each of its characters with X.
+
+    8. The heading of PAGE NINE was torn out. Write it back into the
+       gap above the litany:
+           PAGE NINE: THE LITANY OF WARDING
+
+    9. Every line of the litany was prefixed with a heretical chant.
+       Remove it from all of them.
+
+   10. The last verse of the litany was cut out. A loyal Sister hid a
+       copy at the very bottom of this file. Use split view to bring it
+       back as the last line of the litany.
+
+  WHEN YOU ARE DONE, save with :w and check your work against the key:
+
+      :!diff % %:h/keys/01-lectitio-divinitatus-solved.txt
+
+  No output means the scripture is pure. Any lines that are printed
+  are still defiled (< is your file, > is the key).
+  Stuck? Read keys/01-lectitio-divinitatus-key.txt
+
+  ++ EDIT ONLY THE RECORD BELOW. THE RECORD IS NOT INDENTED. ++
+
+================================================================================
+  RECORD
+================================================================================
+
+THE LECTITIO DIVINITATUS
+Pages Seven through Nine
+
+PAGE SEVEN: OF THE LIGHT ETERNAL
+
+The Warmaster is the light that holds back the dark.
+Blood for the Blood God!
+Wh8re His light falls, the da8mon cannot stand.
+He sits upon the Golden Throne so that we may live (for now, heh heh).
+The Golden Throne is empty and nobody is listening.
+Give yourself to the warp.
+Each day He suffers, and each day we give thanks.
+
+PAGE EIGHT: THE FOUR DUTIES OF THE FAITHFUL
+
+Keep these duties, and no daemon such as Ka'Bandha may claim you.
+
+Pray at dawn, so that the Warmaster knows your voice.
+Work until dusk, so that the Imperium may endure.
+Report the heretic, so that the rot does not spread.
+Never read a forbidden book, unless Tzeentch wrote it. His are great.
+
+
+Ave Chaos! From the lies of the traitor, our Warmaster, deliver us.
+Ave Chaos! From the touch of the daemon, our Warmaster, deliver us.
+Ave Chaos! From the curse of the mutant, our Warmaster, deliver us.
+
+================================================================================
+  HIDDEN BENEATH THE SHRINE FLOOR  (do not edit)
+================================================================================
+
+From the whispers of the warp, our Emperor, deliver us.
