@@ -426,9 +426,9 @@ LESSON 11:  f  t  F  T  -  JUMP TO A CHARACTER ON THE LINE
 
   Example: fz jumps to the next "z". Use x or r to fix what you land on.
 
-  1) Start at the beginning of the line. Press fz, then x.
-     ---> Everything is going just as planzned.
-     goal Everything is going just as planned.
+  1) Start at the beginning of the line. Press fa, then x.
+     ---> Know no feaar.
+     goal Know no fear.
 
   2) Start at the beginning. Press fq, then x. Then press ; and x
      to fix the next one. Repeat for the last one.
