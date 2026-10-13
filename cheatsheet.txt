@@ -23,9 +23,6 @@ LINE ENDS
   0    start of the line
   $    end of the line
 
-       The Emperor Protects.
-       ^                   ^
-       0                   $
 
 
 --------------------------------------------------------------------------------
@@ -44,9 +41,5 @@ WORDS
   e    end of word
   b    back a word
 
-       Only in death does duty end
-            ^  ^   ^ ^
-            b  |   e w
-               cursor
 
 ================================================================================
